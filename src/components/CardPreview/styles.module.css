@@ -1,0 +1,12 @@
+.cards {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 15rem;
+    position: absolute;
+}
+
+.cardBack{
+    margin-left: 5rem;
+}
