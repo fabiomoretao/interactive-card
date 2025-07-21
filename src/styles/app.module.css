@@ -1,15 +1,24 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "left right";
     height: 100vh;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
 }
 
-.content{
+.formInputs {
+    align-content: center;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 2rem;
     grid-area: right;
+    justify-self: center;
+    margin-left: 10rem;
+    max-width: 50%;
 }
 
-.images{
+.images {
     display: flex;
     grid-column: left;
     z-index: 10;
@@ -19,4 +28,9 @@
 .bgImg {
     flex: 0 1 auto;
     z-index: -10;
+}
+
+.smallInputs {
+    display: flex;
+    gap: 1rem;
 }

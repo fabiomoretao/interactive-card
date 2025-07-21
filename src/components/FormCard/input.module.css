@@ -1,0 +1,62 @@
+.inputContainer {
+    display: grid;
+    flex-direction: column;
+}
+
+label {
+    color: #000;
+    font-size: 12px;
+    margin-bottom: .5rem;
+}
+
+/* Estilo padrão dos inputs */
+input {
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: solid 2px var(--gray);
+    border-radius: 10px;
+    flex: 1;
+    min-width: 0;
+    padding: .5rem;
+}
+
+input:focus {
+    border: 2px solid transparent;
+    background-image:
+        linear-gradient(white, white),
+        var(--gradient-color);
+    outline: none;
+}
+
+input:hover {
+    border: 2px solid transparent;
+    background-image:
+        linear-gradient(white, white),
+        var(--gradient-color);
+}
+
+/* Estilização dos inputs de expiração do cartão */
+.expDate .expInputs {
+    display: contents;
+}
+
+.expDate {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.expDate label {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin: 0;
+}
+
+.mounth {
+    grid-column: 1;
+}
+
+.year {
+    grid-column: 2;
+}

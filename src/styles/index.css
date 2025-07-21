@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
@@ -8,7 +10,7 @@
 :root {
   --gray: hsl(212, 12%, 71%);
   --error-color: hsl(0, 24%, 11%);
-  --gradient-color: linear-gradient(to bottom right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  --gradient-color: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
   --light-gray: hsl(270, 3%, 87%);
   --primary-color: hsl(278, 68%, 11%);
   --white: hsl(0, 100%, 100%);
