@@ -21,12 +21,14 @@ function App() {
 
       <form className={styles.formInputs}>
         <Input
+          id={"cardName"}
           label={"cardholder name"}
           placeholder={"e.g. Jane Appleseed"}
           type={"text"}
         />
 
         <Input
+          id={"cardNumber"}
           label={"card number"}
           placeholder={"e.g. 1234 5678 9123 0000"}
           type={"text"}

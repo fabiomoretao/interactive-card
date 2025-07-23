@@ -3,10 +3,12 @@ import styles from "./input.module.css"
 function Input (props) {
     return(
         <div className={`${styles.inputContainer} ${props.className}`}>
-            <label htmlFor={props.for}>{props.label} </label>
+            <label htmlFor={props.id}>{props.label} </label>
             <input 
             type={props.type} 
-            placeholder={props.placeholder}/>
+            placeholder={props.placeholder}
+            id={props.id}
+            />
         </div>
     )
 }

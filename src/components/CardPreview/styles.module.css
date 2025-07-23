@@ -1,12 +1,67 @@
 .cards {
-    align-self: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 15rem;
-    position: absolute;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 30%;
+    z-index: 1;
 }
 
-.cardBack{
+.cards p {
+    color: var(--white);
+}
+
+/* Frente do cartão */
+.cardFront {
+    background-image: url("../../assets/bg-card-front.png");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-areas:
+        "cardLogo cardLogo"
+        "cardNumber cardNumber"
+        "name expDate";
+    height: 219.24px;
+    padding: 1.681rem;
+    width: 400px;
+    z-index: 2;
+}
+
+.cardFront>img {
+    grid-area: cardLogo;
+}
+
+.cardFrontNumber {
+    align-self: top;
+    font-size: 26px;
+    grid-area: cardNumber;
+    margin-top: 2rem;
+}
+
+.name {
+    align-self: end;
+    grid-area: name;
+}
+
+.expDate {
+    align-self: end;
+    grid-area: expDate;
+    justify-self: end;
+}
+
+/* Atrás do cartão */
+.cardBack {
+    display: flex;
+    align-items: center;
+    background-image: url("../../assets/bg-card-back.png");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 219.24px;
+    justify-content: center;
     margin-left: 5rem;
+    width: 400px;
+    z-index: 2;
 }
