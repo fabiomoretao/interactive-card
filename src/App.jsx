@@ -3,8 +3,15 @@ import cardBack from "./assets/bg-card-back.png"
 import cardFront from "./assets/bg-card-front.png"
 import cardLogo from "./assets/card-logo.svg"
 import "./styles/app.css"
+import { useState } from "react"
 
 export default function App() {
+  const [cardholder, setCardholder] = useState('')
+  const [cardNumber, setCardNumber] = useState('')
+  const [cvc, setCvc] = useState('')
+  const [month, setMonth] = useState('')
+  const [year, setYear] = useState('')
+
   return (
     <div className="flex flex-col">
       <img
@@ -20,7 +27,7 @@ export default function App() {
           <span
             className="text-white -translate-x-full pr-[10%] text-sm"
           >
-            000
+            {cvc ? cvc : "000"}
           </span>
         </div>
         <div className="w-full max-w-sm flex -ml-[10%] -translate-y-[25%] -my-[10%] z-20 ">
@@ -33,21 +40,21 @@ export default function App() {
             alt="back of credit card :o"
             className="block w-full h-auto" />
 
-          <div className=" grid grid-cols-2 -translate-x-[50%] -mx-[50%] mt-[25%] items-top justify-content-center">
+          <div className="grid grid-cols-[70% 30%] w-[100%] -translate-x-[50%] -mx-[50%] mt-[25%] items-top">
             <span
-              className="text-white tracking-widest whitespace-nowrap col-[1/3]"
+              className="text-white tracking-widest col-[1/3] justify-self-center truncate"
             >
-              1234 5678 9123 0000
+              {cardNumber ? cardNumber : "1234 5678 9123 0000"}
             </span>
             <span
-              className="text-white text-sm whitespace-nowrap col-[1] "
+              className="text-white text-sm col-[1] truncate pl-[1rem] mr-[1rem]"
             >
-              Jane Appleseed
+              {cardholder ? cardholder : "Jane Appleseed"}
             </span>
             <span
-              className="text-white text-sm whitespace-nowrap col-[2] justify-self-end"
+              className="text-white text-sm whitespace-nowrap col-[2] justify-self-end pr-[1rem]"
             >
-              00/00
+              {month ? month : "00"}/{year ? year : "00"}
             </span>
           </div>
         </div>
@@ -60,6 +67,8 @@ export default function App() {
             name="cardholderName"
             id="cardholderName"
             placeholder="e.g. Jane Appleseed"
+            value={cardholder}
+            onChange={(ev) => setCardholder(ev.target.value)}
           />
         </div>
         <div className="flex max-w-screen flex-col">
@@ -68,7 +77,10 @@ export default function App() {
             type="text"
             name="cardNumber"
             id="cardNumber"
-            placeholder="e.g. 1234 5678 9123 0000" />
+            placeholder="e.g. 1234 5678 9123 0000"
+            value={cardNumber}
+            onChange={(ev) => setCardNumber(ev.target.value)}
+          />
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="grid-col-[1] grid grid-cols-2">
@@ -82,6 +94,8 @@ export default function App() {
               id="cardExpMonth"
               className="col-[1] row-[2] mr-2"
               placeholder="MM"
+              value={month}
+              onChange={(ev) => setMonth(ev.target.value)}
             />
             <input
               type="text"
@@ -89,6 +103,8 @@ export default function App() {
               id="cardExpYear"
               className="col-[2] row-[2]"
               placeholder="YY"
+              value={year}
+              onChange={(ev) => setYear(ev.target.value)}
             />
           </div>
           <div className="grid-col-[2] flex flex-col">
@@ -99,6 +115,8 @@ export default function App() {
               id="cardCvc"
               className="max-w-full"
               placeholder="e.g. 123"
+              value={cvc}
+              onChange={(ev) => setCvc(ev.target.value)}
             />
           </div>
         </div>
