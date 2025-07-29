@@ -6,7 +6,8 @@ Button {
     font-size: 15px;
     font-weight: 700;
     padding: 1rem;
-    width: 100%;
+    margin: 1rem;
+    margin-top: 0;
 }
 
 Button:hover {
@@ -28,7 +29,9 @@ Button:hover {
 /* Inputs */
 label {
     color: #000;
-    margin-bottom: .5rem;
+    font-size: 14px;
+    margin-bottom: .25rem;
+    margin-top: .5rem;
 }
 
 /* Estilo padrão dos inputs */
