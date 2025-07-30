@@ -39,37 +39,21 @@ O usuário deve conseguir:
 
 Confira abaixo diferentes telas e estados da aplicação:
 
-
-
 <div align="center">
 
-<div>
-  <figure style="display:inline-block; margin: 0 1rem;">
-    <img src="./screenshots/desktop-design.png" alt="Desktop Design" width="300px"/>
-    <figcaption>Layout geral na visualização desktop.</figcaption>
-  </figure>
-  <figure style="display:inline-block; margin: 0 1rem;">
-    <img src="./screenshots/active-states.png" alt="Active States" width="300px"/>
-    <figcaption>Estados ativos dos campos no formulário.</figcaption>
-  </figure>
-  <figure style="display:inline-block; margin: 0 1rem;">
-    <img src="./screenshots/complete-state-desktop.png" alt="Complete State Desktop" width="300px"/>
-    <figcaption>Tela de confirmação completa em desktop.</figcaption>
-  </figure>
-</div>
+### Visualização Desktop
+
+| ![Desktop Design](./screenshots/desktop-design.png) | ![Active States](./screenshots/active-states.png) | ![Complete State Desktop](./screenshots/complete-state-desktop.png) |
+|:--:|:--:|:--:|
+| Layout geral na visualização desktop. | Estados ativos dos campos no formulário. | Tela de confirmação completa em desktop. |
 
 &nbsp;
 
-<div>
-  <figure style="display:inline-block; margin: 0 1rem;">
-    <img src="./screenshots/mobile-design.png" alt="Mobile Design" width="300px"/>
-    <figcaption>Layout geral na visualização mobile.</figcaption>
-  </figure>
-  <figure style="display:inline-block; margin: 0 1rem;">
-    <img src="./screenshots/complete-state-mobile.png" alt="Complete State Mobile" width="300px"/>
-    <figcaption>Tela de confirmação completa em mobile.</figcaption>
-  </figure>
-</div>
+### Visualização Mobile
+
+| ![Mobile Design](./screenshots/mobile-design.png) | ![Complete State Mobile](./screenshots/complete-state-mobile.png) |
+|:--:|:--:|
+| Layout geral na visualização mobile. | Tela de confirmação completa em mobile. |
 
 </div>
 
