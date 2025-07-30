@@ -11,7 +11,8 @@ function formatCardNumber(number) {
 export default function Cards(props) {
     return (
         <div className="w-[80%] absolute transform -translate-y-[80%] flex flex-col items-center mx-4
-        laptop:translate-y-[50%] laptop:translate-x-[50%]">
+        laptop:translate-y-[50%] laptop:translate-x-[50%]
+        laptop-lg:translate-y-full laptop-lg:translate-x-[60%]">
             <div className="w-full max-w-sm ml-[30%] z-10 flex items-center shadow-[0_0_10px_1px_rgba(0,0,0,0.8)] rounded-lg
                 tablet:transform tablet:-translate-y-[10%]
                 laptop:translate-y-full">
