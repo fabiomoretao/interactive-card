@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --breakpoint-mobile: 375px;
+  --breakpoint-tablet: 426px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-laptop-lg: 1440px;
+}
 
 * {
   box-sizing: border-box;
@@ -17,5 +27,4 @@
 body {
   font-size: 18px;
   font-weight: 500;
-  text-transform: uppercase;
 }
